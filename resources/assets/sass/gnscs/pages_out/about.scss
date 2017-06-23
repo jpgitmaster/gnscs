@@ -1,0 +1,40 @@
+#wrapper{
+	#inrpg{padding: 15px 0;}
+}
+#abt{
+	#intro{
+		padding: 0 30px;
+	}
+	.intro_dtls{font: 15px segoi; text-align: justify; color: #8c8c8c;}
+	#msn{background-color: #42c6dd;}
+	#vsn{background-color: #43afdd;}
+	
+	.pddngbx{
+		padding: 30px; min-height: 150px; color: #FFF;
+		h3{font: 30px segobb; margin: 0 0 10px; border-bottom: 1px solid #FFF;}
+	}
+
+	#ourteam{
+		width: 1200px; overflow: hidden; margin: 20px auto 40px;
+		.brand{
+			width: 750px; margin: 70px auto 0; line-height: 40px !important; color: #0077bf; font: 38px segobl;
+			img{width: 200px; margin-right: 20px; float: left; position: relative; top: -50px;}
+			span{color: #6dc5e6;}
+		}
+	}
+
+	#ourbackground{overflow: hidden; margin: 0 auto;}
+	.mmbrbx{
+		text-align: center; padding: 0; position: relative;
+		
+		.tmmmbr{width: 100%; display: inline-block;}
+		.tminfo{
+			color: #FFF; position: absolute; padding: 8px 12px; width: 100%; bottom: -1px; background-color: rgba(0, 184, 255, 0.5); left: 0;
+			h2{font: 16px segobb; border-bottom: 1px solid #FFF; text-shadow: 1px 1px 1px #0082b9; text-transform: uppercase; margin: 0;}
+			h3{font: 14px segoi; text-shadow: 1px 1px 1px #0082b9; margin: 0;}
+		}
+
+		&.drkrblu{border: 10px solid #43afdd;}
+		&.lhtrblu{border: 10px solid #42c6dd;}
+	}
+}

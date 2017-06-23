@@ -1,0 +1,173 @@
+/* ADMIN TPL COLOR COMBI */
+body{background-color: #E5E5E5; overflow-x: hidden;}
+
+
+
+#content_lft{
+	background-color: #f5f5f5; border-right: 1px solid #CCC;
+
+	&.expand_nav{width: 46px;}
+	.lnks{
+		padding-left: 0;
+		.lnk{
+			.lnk_hrf{
+				border-top: 1px solid #FFF; border-bottom: 1px solid #C7C7C7; color: #424242;
+				&:hover{color: #0077c0; text-decoration: none;}
+				
+				.p10{
+				    padding: 10px;
+				    font: 14px segobb;
+				    color: #0077c0;
+				    text-transform: uppercase;
+				}
+			}
+			&.active .lnk_hrf{
+				color: #0674E8; background-color: #D6D6D6; border-bottom: 1px solid #BBB; color: #FFF; text-shadow: 1px 1px 1px #000;
+				&:hover{color: #FFF;}
+			}
+			&:last-child{border-top: 1px solid #FFF;}
+		}
+	}
+}
+
+
+/* Header */
+#header{
+	min-height: 50px; position: fixed; z-index: 999; width: 100%;
+
+	#header_lft{
+		background-color: #0077c0; box-shadow: 0px -1px 6px #000;
+
+		.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after{background-color: #FFF;}
+		.nav-toggle{
+			cursor: pointer; margin: 22px 2px 0; position: relative; background: transparent; border: 0;
+			&:focus{outline: 0;}
+
+			span{
+				&:before{top: -8px;}
+				&:after{bottom: -8px;}
+			}
+			
+
+			span, span:before, span:after{cursor: pointer; border-radius: 1px; height: 4px; width: 25px; position: absolute; display: block; content: '';}
+
+			span, span:before, span:after{transition: all 500ms ease-in-out;}
+		
+			&.active{
+				span{
+					background-color: transparent;
+					 &:before, &:after{top: 0;}
+					 &:before{transform: rotate(45deg);}
+					 &:after{transform: rotate(-45deg);}
+				}
+			}
+		}
+	}
+	#header_rght{
+		background-color: #2E87C1; box-shadow: 2px -1px 6px #000;
+		.shtdwn{
+		    background-color: #c32a2a;
+		    padding: 11px 0 8px;
+		    margin: 6px 16px;
+		    text-align: center;
+		    border-radius: 50%;
+		    height: 40px;
+		    width: 40px;
+			a{
+				color: #FFF;
+				.fa{font-size: 20px;}
+			}
+		}
+	}
+}
+
+/* Content */
+#content{
+	position: absolute; top: 52px; width: 100%;
+
+	#content_lft{
+		position: fixed; z-index: 99; min-height: 100%; overflow: hidden;
+		.lnk{
+			list-style: none; width: 245px;
+			.lnk_hrf{
+				display: inherit;
+				.icns{width: 45px; float: left; text-align: center;}
+			}
+		}
+	}
+
+	#content_rght{
+		.innr {
+		    padding: 20px 15px; width: 100%;
+		    .innrpg{
+		    	background-color: #F9F9F9; padding: 20px; border-radius: 5px; overflow: hidden;
+
+		    	.pgttl{
+				    font: bold 17px segobb;
+				    color: #5aabe0;
+				    margin: 0 0 15px;
+				    text-transform: uppercase;
+				}
+		    }
+		}
+		&.expand_content{margin-left: 46px;}
+	}
+
+}
+
+.lftsdrw{float: left; min-height: 51px; width: 200px;}
+.rghtsdrw{width: auto; min-height: 51px; position: relative; z-index: 9; margin-left: 200px;}
+
+
+#content_lft, #content_rght{-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease;}
+
+.nptgrp{
+	margin: 0; min-height: 62px; position: relative;
+	label{
+		font-size: 12px; margin: 15px 0 0; float: left; width: 100%; clear: both;
+		span{color: #F00;}
+	}
+	input, select, textarea{font: 14px segoi; padding: 6px; border-radius: 0; border: 1px solid #CCC; box-shadow: none;}
+
+	&.txtarea label{margin-top: 20px;}
+}
+
+
+.note-editor.note-frame.panel{
+	border: 1px solid #CCC; float: left; width: 100%; border-radius: 0; margin: 0;
+	.note-toolbar.panel-heading{
+		background: #FFF; padding: 0 5px 4px; border-bottom: 1px solid #CCC;
+		.btn-default{background-color: transparent; border-color: transparent;}
+	}
+	.note-editable.panel-body{
+		background-color: #FFF; padding: 10px 15px; min-height: 100px; font-size: small;
+		ul{padding-left: 30px;}
+	}
+}
+
+
+.tbl{
+	border: 0; float: left; width: 100%; clear: both;
+	.thd {
+	    padding: 6px 10px; background-color: #eff8ff;
+	    border: 1px solid #b8e3ff; color: #5aabe0; letter-spacing: 1px; border-bottom: 4px solid #ccecff;
+
+	    .fa{
+	    	float: right; position: relative; top: 4px; cursor: pointer; font-size: 11px;
+	    }
+
+	    &.up>.fa.fa-play{
+	     -ms-transform: rotate(30deg); -webkit-transform: rotate(30deg); transform: rotate(30deg);
+	    }
+
+	    &.dwn>.fa.fa-play{
+	      -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);
+	    }
+		&.actns{width: 100px; text-align: center;}
+	}
+
+	.tbdy{
+		padding: 10px; border: 1px solid #b8e3ff; color: #0077c0;
+		a{text-decoration: none;}
+	}
+}

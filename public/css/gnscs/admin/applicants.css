@@ -1,0 +1,22 @@
+/* Pagination */
+.pagination.pgntn > li a:hover {
+  background-color: #ccecff;
+  border: 1px solid #ccecff;
+  color: #0077c0;
+}
+
+.pagination.pgntn > li a, .pagination.pgntn > li span {
+  border-radius: 0;
+  margin: 0 2px;
+  color: #0077c0;
+  background-color: #eff8ff;
+  border: 1px solid #ccecff;
+}
+
+.pagination.pgntn > li.active > a {
+  background-color: #a2dafb;
+  border: 1px solid #67bdff;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=applicants.css.map */

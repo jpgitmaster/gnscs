@@ -1,0 +1,22 @@
+@font-face {font-family: segoi; src: url('fonts/segoui/segoeui.ttf');}
+@font-face {font-family: segobb; src: url('fonts/segoui/segoeuib.ttf');}
+@font-face {font-family: segob; src: url('fonts/segoui/seguisb.ttf');}
+@font-face {font-family: segobl; src: url('fonts/segoui/seguibl.ttf');}
+
+/* No Padding Bootstrap Grid */
+.no-gutter > [class*='col-']{padding-right:0; padding-left: 0;}
+
+/* Center Element */
+.center{text-align: center;}
+
+/* Padding */
+.pddng{padding: 0 5px;}
+
+/* Margin */
+.mrgn{margin: 10px;}
+
+.ttl{
+	h3{margin: 0; color: #6dc5e6; font: 22px segobb;}
+	hr{margin-top: 5px; border-top: 4px solid #6dc5e6; width: 150px;}
+	.btmbrdr{background-color: #e0e0e0;}
+}

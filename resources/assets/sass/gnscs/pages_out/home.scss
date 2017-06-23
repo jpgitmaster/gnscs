@@ -1,0 +1,167 @@
+#wrapper{
+	#menu{
+		padding: 8px 20px 15px; border-bottom: 1px solid #F9F9F9; background-color: rgba(255, 255, 255, 1); min-height: 94px; z-index: 9999;
+		
+		img{width: 70px; float: left; margin: -13px 8px 0 0;}
+
+		.navbar-brand{
+			padding: 18px 5px; color: #0077bf; font: 22px segobl; line-height: 16px;
+
+			span{color: #6dc5e6; font: 22px segobl;}
+		}
+
+		.navbar-nav{
+			float: right; position: relative; margin-top: 20px;
+
+			li{
+				a{
+					transition: ease-in-out .2s; padding: 12px 20px; text-transform: uppercase; font: 14px segobb; color: #6dc5e6;
+					
+					&:hover{transition: ease-in-out .2s; background-color: #6dc5e6; color: #FFF;}
+				}
+				&.active a{background-color: #8ad3ef; color: #FFF;}
+			}
+		}
+	}
+	#inrpg{padding: 0;}
+
+	#banners{
+		position: relative;
+	}
+
+	#services{
+		.blubx{
+			.bx{
+				padding: 15px 20px; min-height: 200px; color: #FFF;
+
+				h3{text-align: center; margin: 0 0 10px; font: 22px segobb;}
+				p{font-size: 14px; line-height: 18px;}
+			}
+			&:nth-child(1){background-color: #67d2e4;}
+			&:nth-child(2){background-color: #42c6dd;}
+			&:nth-child(3){background-color: #43afdd;}
+			&:nth-child(4){background-color: #339cde;}
+		}
+	}
+
+	#about{
+		padding: 30px 0 40px; background-color: #f9f9f9; overflow: hidden; text-align: center;
+		h3{color: #6dc5e6; font: 32px segobb; margin: 0 0 10px;}
+		p{font: 16px segoi; color: #8c8c8c; margin: 10px 0 0; display: inline-block;}
+		a{margin: 20px 0 0; display: inline-block; text-decoration: none; font: 14px segobb; text-transform: uppercase; background-color: #6dc5e6; color: #FFF; padding: 8px 15px;}
+		.abtimg{width: 100%;}
+	}
+
+	#jobposting{
+		padding: 40px 0 0; background-color: #FFF;
+		.ttl>h3{font: 25px segobb;}
+		.ttl>h3>span{text-transform: uppercase; font: 30px segobl;}
+		.jbimg{
+			width: 380px; float: left;
+			img{width: 100%;}
+		}
+		.jblst{
+			margin-left: 0; padding: 0 20px 40px; overflow: hidden;
+			.jb{
+				margin: 8px; background-color: #F9F9F9; min-height: 200px; padding: 10px;
+				
+				h3{font: 15px segob; color: #339cde; margin: 0; padding-bottom: 3px;}
+			}
+		}
+	}
+
+	#news{
+		overflow: hidden;
+	    padding: 15px 20px;
+	    min-height: 520px;
+	    background-color: #F9F9F9;
+		.news_n_testi{background-color: #F9F9F9;}
+		.evnt{
+			overflow: hidden; margin: 0 0 25px;
+
+			.evntimg{
+				width: 180px; float: left;
+
+				img{width: 100%;}
+
+				&.evntblnk{background-color: #E9E9E9; width: 180px; height: 120px;}
+			}
+
+			.evntdtls{
+				margin-left: 180px; padding: 0 15px;
+
+				h3{margin: -5px 0 5px; color: #339cde; font: 16px segob;}
+				p{font: 13px segoi; color: #8c8c8c; margin: 0 0 5px;}
+				a{background-color: #6dc5e6; color: #FFF; padding: 2px 5px 3px; border-radius: 5px; float: right; font: 11px segoi;}
+				
+				&.evntblnk{background-color: #E9E9E9; margin: 0 0 0 194px; height: 120px;}
+			}
+		}
+	}
+
+	#testimonials{
+		overflow: hidden;
+	    padding: 15px 20px 0;
+	    min-height: 520px;
+	    background-color: #efefef;
+		.news_n_testi{background-color: #efefef;}
+		.ceo_img{width: 280px; top: 32px; float: right; position: relative; right: -20px;}
+		.ceo_testi{
+			margin-right: 240px; margin-top: 50px;
+			h2{margin-bottom: 0; font: 25px segobl; color: #6dc6e6; text-shadow: 1px 1px 1px #00719a; border-bottom: 1px solid;}
+			h4{margin: 0; font: 16px segobb; color: #6dc6e6;}
+		}
+		.popover.left{
+			max-width: 400px; z-index: 9; margin-top: 20px; left: 10px; display: block; position: relative; border: 1px solid #6dc6e6; background-color: #6dc6e6;
+			
+			.arrow{
+				
+				&:after{border-left-color: #6dc6e6;}
+			}
+
+			.popover-content{
+				color: #FFF; padding: 20px;
+				font: italic 15px segoi; line-height: 22px;
+			    text-align: justify; width: 100%;
+			}
+		}
+	}
+}
+
+
+/* CAROUSEL FADE IN / OUT */
+.carousel-fade{
+	.carousel-inner{
+		.item{
+			opacity: 0; transition-property: opacity;
+			img{width: 100%;}	
+		}
+		.active{opacity: 1;}
+	}
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-fade{
+		.carousel-inner{
+			.item.next,
+		    .item.active.right {
+		      opacity: 0;
+		      -webkit-transform: translate3d(0, 0, 0);
+		              transform: translate3d(0, 0, 0);
+		    }
+		    .item.prev,
+		    .item.active.left {
+		      opacity: 0;
+		      -webkit-transform: translate3d(0, 0, 0);
+		              transform: translate3d(0, 0, 0);
+		    }
+		    .item.next.left,
+		    .item.prev.right,
+		    .item.active {
+		      opacity: 1;
+		      -webkit-transform: translate3d(0, 0, 0);
+		              transform: translate3d(0, 0, 0);
+		    }
+		}
+	}
+}

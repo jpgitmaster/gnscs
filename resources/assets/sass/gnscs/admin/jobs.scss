@@ -1,0 +1,20 @@
+.input-group{
+	width: 100%;
+	input[name=maxsalary]{margin-left: -1px;}
+}
+.dsplychckbx{
+	span{
+		font-size: 10px; font-weight: bold; text-transform: uppercase; position: relative; top: -3px;
+	}
+}
+
+.uib-datepicker-popup.dropdown-menu li,
+.uib-datepicker-popup.dropdown-menu .uib-datepicker,
+.uib-datepicker-popup.dropdown-menu .uib-datepicker div{outline: none !important;}
+.uib-datepicker-popup.dropdown-menu .uib-datepicker{padding: 5px 10px;}
+
+
+#createJob{
+	.modal-header{background-color: #0077c0; color: #FFF;}
+	.modal-body{overflow: hidden; padding-top: 5px;}
+}

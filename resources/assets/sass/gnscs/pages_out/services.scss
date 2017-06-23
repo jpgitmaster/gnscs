@@ -1,0 +1,12 @@
+#services{
+	margin-bottom: 0; overflow: hidden;
+	.srvc{
+		.mrgn{
+			padding: 15px; border-radius: 5px; overflow: hidden; color: #FFF; min-height: 100px;
+			h3{font: 20px segobb; margin: 0 0 5px; border-bottom: 1px solid #FFF; padding-bottom: 4px;}
+			p{font: 15px segoi; font-style: italic;}
+		}
+		&:nth-child(even) .mrgn{background-color: #43afdd;}
+		&:nth-child(odd) .mrgn{background-color: #42c6dd;}
+	}
+}

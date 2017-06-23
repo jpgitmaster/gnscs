@@ -1,0 +1,245 @@
+#navigation {
+  position: relative;
+  margin: 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 10px 30px;
+  border-bottom: 1px solid #F9F9F9;
+  width: 100%;
+}
+
+#navigation .logo {
+  width: 70px;
+  float: left;
+  margin: -13px 8px 0 0;
+}
+
+#navigation .navbar-header {
+  min-height: 80px;
+}
+
+#navigation .navbar-brand {
+  padding: 18px 5px;
+  color: #0077bf;
+  font: 22px segobl;
+  line-height: 16px;
+}
+
+#navigation .navbar-brand span {
+  color: #6dc5e6;
+  font: 22px segobl;
+}
+
+#navigation .navbar-nav {
+  float: right;
+  position: relative;
+  margin-top: 20px;
+}
+
+#navigation .navbar-nav li a {
+  transition: ease-in-out .2s;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font: 14px segobb;
+  color: #6dc5e6;
+}
+
+#navigation .navbar-nav li a:hover {
+  transition: ease-in-out .2s;
+  background-color: #6dc5e6;
+  color: #FFF;
+}
+
+#navigation .navbar-nav li.active a {
+  background-color: #8ad3ef;
+  color: #FFF;
+}
+
+#inrpg {
+  padding: 15px 30px;
+  margin-top: -5px;
+}
+
+#footer {
+  background-color: #313131;
+  padding: 20px 10px 30px;
+  overflow: hidden;
+}
+
+#footer .ftr:nth-child(1) h3 {
+  margin: -7px 0 10px;
+  text-transform: inherit;
+}
+
+#footer .ftr:nth-child(1) ul > li {
+  font-style: italic;
+  padding-left: 25px;
+}
+
+#footer .ftr h3 {
+  margin: 10px 0 15px;
+  color: #6dc5e6;
+  font: 18px segobb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+#footer .ftr .ftrbx_a_span {
+  font-size: 14px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 0;
+  display: inline-block;
+  color: #FFF;
+}
+
+#footer .ftr .ftrbx {
+  padding: 10px 8px;
+  min-height: 200px;
+}
+
+#footer .ftr .ftrbx ul {
+  padding: 0;
+}
+
+#footer .ftr .ftrbx ul li {
+  position: relative;
+  list-style: none;
+  border-bottom: 1px solid #1f1f1f;
+  border-top: 1px solid #424242;
+  color: #FFF;
+}
+
+#footer .ftr .ftrbx ul li:first-child {
+  border-top: 0;
+}
+
+#footer .ftr .ftrbx ul li:last-child {
+  border-bottom: 0;
+}
+
+#footer .ftr .ftrbx ul li a, #footer .ftr .ftrbx ul li span {
+  font-size: 14px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #FFF;
+  display: inline-block;
+}
+
+#footer .ftr .ftrbx ul li .fa {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #339cde;
+  font-size: 20px;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li {
+  float: left;
+  margin: 0 4px;
+  padding: 0;
+  display: inline-block;
+  border: 0;
+  list-style: none;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li a {
+  text-align: center;
+  background-color: #0077c0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li a .fa {
+  color: #FFF;
+  position: relative;
+  top: 0;
+  font-size: 18px;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li:nth-child(1) a {
+  background-color: #3b5998;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li:nth-child(2) a {
+  background-color: #1da1f2;
+}
+
+#footer .ftr .ftrbx ul.sclmedia > li:nth-child(3) a {
+  background-color: #517fa6;
+}
+
+#footerbtm {
+  background-color: #2a2a2a;
+  padding: 20px 0 15px;
+  text-align: center;
+}
+
+#footerbtm p {
+  color: #FFF;
+  font-size: 11px;
+  margin: 0;
+}
+
+.modal .modal-content {
+  border-radius: 0;
+}
+
+.modal .modal-content .modal-header {
+  background-color: #0077bf;
+  padding: 10px;
+}
+
+.modal .modal-content .modal-header .modal-title {
+  font: 18px segobb;
+  color: #FFF;
+}
+
+.modal .modal-content .smlimg {
+  width: 100%;
+}
+
+.modal .modal-content .btn.btn-default {
+  display: inherit;
+  text-shadow: none;
+  border-radius: 0;
+  background-color: #0077bf;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 0;
+  font: 14px segobb;
+  float: none;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.nptgrp {
+  margin: 0;
+  min-height: 62px;
+  position: relative;
+}
+
+.nptgrp label {
+  font-size: 12px;
+  margin: 15px 0 0;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+.nptgrp label span {
+  color: #F00;
+}
+
+.nptgrp input, .nptgrp select, .nptgrp textarea {
+  font: 14px segoi;
+  padding: 6px;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=master.css.map */
